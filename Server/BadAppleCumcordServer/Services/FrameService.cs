@@ -11,6 +11,8 @@ public class FrameService
 													.OrderBy(n => int.Parse(n.Split("/").Last().Split(".")[0]))
 													.ToArray();
 
+	public int FrameCount => _rawFrames.Length;
+
 	public const string Chars = " ░▒▓█";
 
 	public const double CharScaleF = 4.0 / (byte.MaxValue * 3.0);

@@ -31,4 +31,7 @@ public class BadAppleController : Controller
 
 	[Route("/audio.opus")]
 	public IActionResult Audio() => File(System.IO.File.OpenRead("badapple.opus"), "audio/ogg");
+
+	[Route("/framecount")]
+	public IActionResult FrameCount() => Ok(_frameService.FrameCount);
 }
