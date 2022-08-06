@@ -1,0 +1,7 @@
+{
+  "name": "Bad Apple",
+  "description": "Plays bad apple on the cumcord plugins list",
+  "author": "Yellowsink",
+  "file": "index.ts",
+  "license": "Unlicense"
+}
