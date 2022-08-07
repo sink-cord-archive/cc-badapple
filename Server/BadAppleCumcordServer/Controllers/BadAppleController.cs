@@ -24,7 +24,7 @@ public class BadAppleController : Controller
 	});
 
 	[Route("/frame/{num:int}")]
-	public IActionResult Frame(int num) => Json(_frameService.GetFrame(num, 40)); // TODO: figure out a sensible length
+	public IActionResult Frame(int num) => Json(_frameService.GetFrame(num, 48));
 
 	[Route("/framerate")]
 	public IActionResult Framerate() => Ok(30);
